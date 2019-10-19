@@ -1,0 +1,83 @@
+//    public ClsEmpleados getCedula(String Cedula)
+//    {
+//     java.util.List<ClsEmpleados> ListaEmpleados = new ArrayList <>();
+//        Connection conect = conexion();   
+//        try {
+//            ClsEmpleados empleados= null;
+//            
+//            String sql = "select * from TblEmpleados where Cedula = '"+Cedula+"'";
+//            Statement st = conect.createStatement();
+//             ResultSet rs = st.executeQuery(sql);
+//             if(rs.next()){
+//                 //ClsEmpleados tempEmpleado = new ClsEmpleados();
+//                  
+//                        //ClsEmpleados tempEmpleado = new ClsEmpleados();
+//                        empleados = new ClsEmpleados();
+//                        empleados.setCedula(rs.getString("Cedula"));
+//                        empleados.setPrimerApellido(rs.getString("PrimerApellido"));
+//                        empleados.setSegundoApellido(rs.getString("SegundoApellido"));
+//                        empleados.setPrimerNombre(rs.getString("PrimerNombre"));
+//                        empleados.setSegundoNombre(rs.getString("SegundoNombre"));
+//                        empleados.setDireccion(rs.getString("Direccion")); 
+//                        empleados.setCorreoElectronico(rs.getString("CorreoElectronico")); 
+//                        empleados.setTelefono(rs.getString("Telefono")); 
+//                        empleados.setCelular(rs.getString("Celular")); 
+//                        empleados.setSalarioDia(rs.getDouble("Salario")); 
+//                        empleados.setFechaIngreso(rs.getString("FechaIngreso")); 
+//                        empleados.setFechaSalida(rs.getString("FechaSalida")); 
+//                        empleados.setTipoSalario(rs.getInt("TipoSalario")); 
+//                        empleados.setFechaNac(rs.getString("FechaNacimiento")); 
+//                        empleados.setEstCivil(rs.getString("EstadoCivil")); 
+//                        empleados.setCargo(rs.getString("Cargo"));            
+//             }
+//            return empleados;
+//            
+//        } catch (SQLException ex) {
+//            Logger.getLogger(ClsConexionDatos.class.getName()).log(Level.SEVERE, null, ex);
+//            return null;
+//        }        
+//    }
+
+
+//    public ClsEmpleados Getmostrar()
+//    {
+//        ResultSet rs = null;
+//        Connection conect = conexion();
+//        try {
+//            
+//            ClsEmpleados empleados= null;
+//            
+//            String sql = "select * from TblEmpleados ";
+//            Statement st = conect.createStatement();
+//              rs = st.executeQuery(sql);
+//             while(rs.next()){
+//                  empleados = new ClsEmpleados(
+//                          rs.getString("Cedula"),
+//                          rs.getString("PrimerApellido"),
+//                          rs.getString("SegundoApellido"),
+//                          rs.getString("PrimerNombre"),
+//                          rs.getString("SegundoNombre"),
+//                          rs.getString("Direccion"),
+//                          rs.getString("CorreoElectronico"),
+//                          rs.getString("Telefono"),
+//                          rs.getString("Celular"),
+//                          rs.getDouble("Salario"),
+//                          rs.getString("FechaIngreso"),
+//                          rs.getString("FechaSalida"),
+//                          rs.getInt("TipoSalario"),
+//                          rs.getString("FechaNacimiento"),
+//                          rs.getString("EstadoCivil"),
+//                          rs.getString("Cargo"),
+//                          rs.getString("Estado"),
+//                          rs.getInt("DiasTrabajados"),
+//                          rs.getString("CuentaBancaria")
+//                          );              
+//             }
+//            return empleados;
+//            
+//        } catch (SQLException ex) {
+//            Logger.getLogger(ClsConexionDatos.class.getName()).log(Level.SEVERE, null, ex);
+//            return null;
+//        }
+//        
+//    }

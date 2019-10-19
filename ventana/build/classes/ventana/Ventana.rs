@@ -1,0 +1,2 @@
+ventana.CerrarVentana
+ventana.Ventana
